@@ -45,5 +45,5 @@ app.get("/", (req: Request, res: Response) => {
 
 const PORT = process.env.PORT || 8080;
 server.listen(PORT, () => {
-    console.log(`Server is running on http://localhost:8000`);
+    console.log(`Server is running on http://localhost:${PORT}`);
 });
