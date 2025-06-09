@@ -21,7 +21,6 @@ wss.on("connection", (ws: ExtWebSocket, req: Request) => {
     console.log(`New client connected to room: ${roomId}`);
 
     ws.on("message", (message) => {
-        console.log("Received:", message.toString());
 
         wss.clients.forEach((client) => {
             const c = client as ExtWebSocket;
